@@ -1,0 +1,18 @@
+public:: true
+
+- ## Introduction
+	- We are going to introduce some basic notions in functional programming, that is
+		- define data types **inductively**
+		- define functions about defined data types **recursively**
+	- The above two abilities give us not only the confident in
+		- **programming** in Lean: Since Lean is a functional programming language, we can write whatever we want. In fact, the Lean compiler (and its language server) is written in Lean.
+			- Functional programming itself is a well-researched field, and has many interesting and beautiful theories. Hence, we are going to talk a little about them. We are not going to cover everything in details, but I hope you, the readers, can enjoy the joy of not only solving real world tasks elegantly, and also diving into the purity of functional programming in the future, with those pearls we find.
+			- *The Journal of Functional Programming* and ICFP has many functional pearls, which are elegant, instructive examples of functional programming.
+		- **proving** theorems in Lean: Lean is a interactive theorem prover based on a variant of dependent type theory.
+			- The term "dependent" type here means that Lean allow user to use *types that dependent on value*, one of the most well-known example is the $\mathtt{Vec}$ type which is index by a $\mathbb N$, that is, the judgement $n : \mathbb N \vdash \mathtt{xs} : \mathtt{Vec}\ n$ is stating that there is a vector $\mathtt{xs}$, which is an array of the given length $n$. Why we suppress the word "dependent" is that there can exists more than one kind of dependencies: like the refine types; or the famous $\lambda$-cube, which build the cube of type systems with some selected dependency relations on types and terms.
+			- So programming language based on type theories like the one of Lean is sometimes called programming language with first-class types, instead of dependent typed.
+			- The above two kind of type systems is out of the scope of this book, but if someone is interested in the $\lambda$-cube, the book *Type Theory and Formal Proof* by Rob Nederpelt and Herman Geuvers servers as a gentle introduction to the $\lambda$-cube.
+		- Although we do not need to know this for now, how can Lean serves as the both two roles, simultaneously, and does the two tasks very well? The secret is behind the *Curry-Howard correspondence*: which you do not need to know how, but according to learning programming in Lean and proving in Lean, we can get an intuitive impression on this. There is a nice paper, *Propositions as Types*, by Philip Wadler, talks about this topic in details.
+- ## Starting at the Beginning: The Natural Numbers
+	- The name of this sections follows the first chapter in Terence Tao's text book, *Analysis I*.
+	- We are going to define the most basic notions in doing mathematics, meanwhile learning the basics of functional programming: the ability to define data types inductively, and define functions about defined data types recursively. And we will see how the exactly same way of programming can be used for proving theorems.

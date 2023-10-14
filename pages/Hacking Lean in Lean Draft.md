@@ -1,0 +1,33 @@
+public:: true
+
+- Functional Programming in Lean
+	- Playing with Nat, List and Error Types
+		- simple recursion schemes: https://maartenfokkinga.github.io/utwente/mmf91m.pdf
+	- Tactics $\iff$ Terms
+	- Proving with Nat and List
+		- https://plfa.github.io/Lists/
+	- Understanding Monads: `map`, `pure` and `bind`
+		- the `do`-notation
+		- the applicative idiom bracket
+		- the `return` tactic
+	- Comprehending Monads: `map`, `pure` and `join`
+		- https://dl.acm.org/doi/abs/10.1145/91556.91592
+	- Identity, State Monad and Monad Transformers
+- Meta-Programming in Lean
+	- meta-programming monads and APIs
+		- https://github.com/leanprover-community/lean4-metaprogramming-book
+	- simple tactics
+	- simple syntax
+	- syntax with tactics
+	- procedural macros
+		- `to_additive`
+		- `simp`-attribute
+		- derive
+			- task: foldable, functor, applicative, monad
+	- DSL example: `do`-notation
+		- lab: monadic comprehensions
+	- APIs review
+		- lab: `nth_rw`
+		- lab: `try this`
+	- tactics with algorithms: `cc`
+- hierarchy of universes, proof irrelevance and subsingleton elimination, and axioms adds to the theory in order to do "standard mathematics"
