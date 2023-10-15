@@ -22,3 +22,5 @@ public:: true
 		- So we can say simply, the function `evalExact'` first states it only consider the case when calling the tactic `exact'`, otherwise throw an error. Then ensure the term we want to use in `exact'` is exactly of the type "unified" with the current main goal, otherwise throw some errors.
 		- But what is elaborate, what is unify, what is `MVarContext`, what is elaboration here? And why a tactic is essentially a function from `Syntax` to `TacticM Unit` (plus its parser)? To answer these questions, we are going to say a little about some of the primary steps involved in the Lean type checking process, and introduce the Monadic Meta Programming APIs of Lean.
 		- [[Please finish the exercises in the referred code above.]]
+- ## About the Lean Internal
+- ## The Monads and APIs

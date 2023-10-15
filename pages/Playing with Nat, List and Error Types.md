@@ -16,3 +16,16 @@ public:: true
 - ## Starting at the Beginning: The Natural Numbers
 	- The name of this sections follows the first chapter in Terence Tao's text book, *Analysis I*.
 	- We are going to define the most basic notions in doing mathematics, meanwhile learning the basics of functional programming: the ability to define data types inductively, and define functions about defined data types recursively. And we will see how the exactly same way of programming can be used for proving theorems.
+- ## Playing with Lists
+	- See `HackingLeanInLeanSrc/PartI/BasicFp.lean`
+	- ### Basic Operations on Lists: append, reverse, filter
+	- ### Higher-order function for Lists
+		- `map` lift a function to structure preserve mapping
+		- `fold` lift an operator to a function, that maps from one structure to another structure
+			- `sum`
+			- `filter`
+		- a little about recursion schemes: ((652a2f6a-50d6-44c6-bfe6-38a043e4ab4e))
+- ## Error types
+	- See `HackingLeanInLeanSrc/PartI/BasicFp.lean`
+	- ### Operations that may throw an error
+	- ### Specify the Error Kind
