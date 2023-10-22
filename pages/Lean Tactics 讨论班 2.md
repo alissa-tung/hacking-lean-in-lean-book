@@ -1,0 +1,40 @@
+- API Review
+	- https://user-images.githubusercontent.com/7578559/246022611-78867009-2624-46a3-a1f4-f488fd25d494.png
+	- https://user-images.githubusercontent.com/7578559/246022706-b403e650-dab4-4843-be8c-8fb812695a3a.png
+- De Bruijn index
+	- ((653429b2-c1f5-4d7c-9b23-942171afbbea))
+	- $\mathbf{K} := \lambda x . \lambda y . x := \lambda \lambda 2$
+	- $\mathbf S := \lambda x . \lambda y . \lambda z . x z (y z) :=  \lambda \lambda \lambda 3 1 (2 1)$
+	- $\lambda z. (\lambda y. y (\lambda x. x)) (\lambda x. z x) := \lambda (\lambda 1 (\lambda 1)) (\lambda 2 1)$
+- Construct and reduce terms
+- Why is `Expr` important?
+	- `Expr` give the exact meaning of a proof term
+	- `Lean.Meta.isDefEq`
+- Why is `Lean.Meta.isDefEq` non-trivial?
+	- meta variables
+- Meta variables are stateful
+	- global context and local context
+		- https://github.com/leanprover-community/lean4-metaprogramming-book/blob/master/md/main/04_metam.md#local-contexts
+	- save state and restore state
+		- https://github.com/leanprover-community/lean4-metaprogramming-book/blob/master/md/main/04_metam.md#backtracking
+- ## Syntax
+	- simple syntax declares syntax (parser) and semantics at once
+		- what does the semantics here refers to?
+	- `infix`, `notation`
+	- basic syntax category: `term`, `command`, `tactic`
+	- custom syntax category
+		- syntax patterns
+- ## Macro
+	- simple operator
+	- register macro
+	- macro rules
+		- notation is limited to the term syntax category
+		- notation cannot have arbitrary macro code on the right hand side
+- ## Elab
+	- `def`, `inductive`, `structure`
+	- register
+	- abbr
+	- override
+	- overloaded
+- Qq
+	- https://github.com/leanprover-community/quote4

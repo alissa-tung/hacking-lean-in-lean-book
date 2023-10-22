@@ -24,6 +24,8 @@ public:: true
 	- [*The inverse of a bijection.*](https://xenaproject.wordpress.com/2019/06/11/the-inverse-of-a-bijection/)
 	- [*The great crusade against TCM*](https://github.com/agda/agda/pull/3589)
 	- [*Lean verbose: Very controlled natural language tactics for Lean*](https://github.com/PatrickMassot/lean-verbose)
+	- [*You Could Have Invented De Bruijn Indices*](https://golem.ph.utexas.edu/category/2021/08/you_could_have_invented_de_bru.html)
+	  id:: 653429b2-c1f5-4d7c-9b23-942171afbbea
 - All exercises:
 	- [[Please finish the exercises in the referred code above.]]
 	  id:: 652ada79-8e66-4c41-a778-6fcf21c3d9b2
